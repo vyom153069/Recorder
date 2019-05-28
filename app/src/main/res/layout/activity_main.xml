@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#F06942">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:text="Record Video"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:layout_weight="0.2"/>
+
+    <ImageView
+        android:id="@+id/recordvideo"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/video2"
+        android:layout_weight="0.2"
+        android:onClick="video"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Record Audio"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:layout_weight="0.2"/>
+
+    <ImageView
+        android:id="@+id/recordAudio"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/audio2"
+        android:layout_weight="0.2"
+        android:onClick="audio"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Click Picture"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:layout_weight="0.2"
+
+        />
+
+    <ImageView
+        android:id="@+id/clickPicture"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/camera"
+        android:layout_weight="0.2"
+        android:layout_margin="30dp"
+        android:onClick="camera"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#2828CC"
+        android:text="SHOW MY RECORDINGS"
+        android:id="@+id/save"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        android:layout_weight="0.2"
+        android:onClick="save"/>
+
+</LinearLayout>
